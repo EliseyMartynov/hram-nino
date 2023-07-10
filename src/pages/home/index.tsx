@@ -75,3 +75,5 @@ export const HomePage = () => {
     </section>
   </main>
 }
+
+export default HomePage
