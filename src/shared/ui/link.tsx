@@ -3,7 +3,7 @@ import cx from "classnames";
 import styles from "./link.module.scss";
 
 
-export const LinkButton = ({ children, ...props }: PropsWithChildren & React.HTMLProps<HTMLLinkElement>) => {
+export const LinkButton = ({ children, ...props }: PropsWithChildren & React.HTMLProps<HTMLAnchorElement>) => {
   return <a {...props}
             className={cx(props.className, styles.link)}
             rel="noopener noreferrer">
