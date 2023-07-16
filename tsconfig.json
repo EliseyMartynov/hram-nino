@@ -22,6 +22,7 @@
     "paths": {
       "@app/*": ["./src/app/*"],
       "@pages/*": ["./src/pages/*"],
+      "@pages-fsd/*": ["./src/pages-fsd/*"],
       "@shared/*": ["./src/shared/*"]
     }
   },
