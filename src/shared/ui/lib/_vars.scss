@@ -1,0 +1,8 @@
+$primary: #66909C;
+$primary-hover: lighten($primary, 5%);
+
+$radius: 8px;
+
+@function sized($size) {
+  @return $size * 4px;
+}

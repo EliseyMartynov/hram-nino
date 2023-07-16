@@ -1,12 +1,12 @@
 .link {
-  background: var(--primary);
-  padding: 15px;
+  background: $primary;
+  padding: sized(3);
   color: white;
-  border-radius: 8px;
+  border-radius: $radius;
   cursor: pointer;
   box-shadow: 0 2px 5px 1px #BBB;
 
   &:hover {
-    background: var(--primary-hover);
+    background: $primary-hover;
   }
 }

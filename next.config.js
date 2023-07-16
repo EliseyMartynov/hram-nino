@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const path = require('path');
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    sassOptions: {
+        prependData: '@import "_vars.scss";',
+        includePaths: [path.resolve(__dirname, './src/shared/ui/lib')],
+    },
+};
+
+module.exports = nextConfig;

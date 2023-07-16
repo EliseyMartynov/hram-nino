@@ -1,0 +1,23 @@
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: sized(10);
+  }
+
+  & > span {
+    font-size: sized(15);
+    margin: 0 auto;
+  }
+
+  & :global(.textContainer) {
+    width: 50%;
+  }
+
+  .emoji {
+    font-size: sized(25);
+    line-height: 1.1;
+  }
+}
