@@ -3,10 +3,8 @@ import { sized } from '@shared/ui/lib/sized';
 
 export const About = () => {
     return (
-        <section className="section">
-            <h2 className="subtitle" id="about">
-                О приходе
-            </h2>
+        <section className="section" id="about">
+            <h2 className="subtitle">О приходе</h2>
             <div className={styles.block}>
                 <span className={styles.emoji}>🙌</span>
                 <div className="textContainer" style={{ textAlign: 'center' }}>

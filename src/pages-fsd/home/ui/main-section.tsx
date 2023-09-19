@@ -11,18 +11,6 @@ const links = [
         name: 'Расписание',
         link: '#',
     },
-    /*{
-    name: "Таинства",
-    link: '#'
-  },*/
-    /*{
-    name: "Духовенство",
-    link: '#'
-  },*/
-    /*{
-    name: "Святыни прихода",
-    link: '#'
-  },*/
     {
         name: 'Контакты',
         link: '#',
@@ -31,23 +19,31 @@ const links = [
 
 export const MainSection = () => {
     return (
-        <section className={styles.mainSection}>
-            <h1 className={styles.title}>
-                Храм святой равноапостольной Нины в г. Минске
-            </h1>
-            <Image
-                src="/my_church.svg"
-                alt="church-logo"
-                fill
-                className={styles.heroLogo}
-            />
-            <div className={styles.navBox}>
-                {links.map((link) => (
-                    <LinkButton key={link.name} href={link.link}>
-                        {link.name}
-                    </LinkButton>
-                ))}
-            </div>
-        </section>
+        <>
+            <video autoPlay className={styles.video} loop muted>
+                <source src="/georgia_video.mp4" type="video/mp4" />
+            </video>
+            <div className={styles.gradient} />
+            <section className={styles.mainSection}>
+                <div className={styles.mainInside}>
+                    <h1 className={styles.title}>
+                        Храм святой равноапостольной Нины в г. Минске
+                    </h1>
+                    <Image
+                        src="/my_church.svg"
+                        alt="church-logo"
+                        fill
+                        className={styles.heroLogo}
+                    />
+                    <div className={styles.navBox}>
+                        {links.map((link) => (
+                            <LinkButton key={link.name} href={link.link}>
+                                {link.name}
+                            </LinkButton>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </>
     );
 };

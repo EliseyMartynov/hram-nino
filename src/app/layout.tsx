@@ -1,8 +1,5 @@
 import './globals.scss';
 import type { Metadata } from 'next';
-import { Jost } from 'next/font/google';
-
-const jost = Jost({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
     title: 'Храм святой Нины',
@@ -12,7 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={jost.className}>{children}</body>
+            <body>{children}</body>
         </html>
     );
 }
