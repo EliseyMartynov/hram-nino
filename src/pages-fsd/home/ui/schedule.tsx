@@ -1,6 +1,6 @@
 export const Schedule = () => {
     return (
-        <div className="section">
+        <div className="section" id="schedule">
             <h2 className="subtitle">Расписание</h2>
             <img
                 src="/assets/schedule.jpeg"
@@ -9,6 +9,7 @@ export const Schedule = () => {
                     width: 300,
                     height: 'auto',
                     margin: 'auto',
+                    cursor: 'pointer',
                 }}
             />
         </div>

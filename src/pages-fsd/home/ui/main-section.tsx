@@ -9,11 +9,11 @@ const links = [
     },
     {
         name: 'Расписание',
-        link: '#',
+        link: '#schedule',
     },
     {
         name: 'Контакты',
-        link: '#',
+        link: '#contacts',
     },
 ];
 
