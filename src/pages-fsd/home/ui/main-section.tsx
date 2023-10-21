@@ -21,7 +21,7 @@ export const MainSection = () => {
     return (
         <>
             <video autoPlay className={styles.video} loop muted>
-                <source src="/georgia_video.mp4" type="video/mp4" />
+                <source src="/assets/georgia_video.mp4" type="video/mp4" />
             </video>
             <div className={styles.gradient} />
             <section className={styles.mainSection}>
@@ -30,7 +30,7 @@ export const MainSection = () => {
                         Храм святой равноапостольной Нины в г. Минске
                     </h1>
                     <Image
-                        src="/my_church.svg"
+                        src="/assets/my_church.svg"
                         alt="church-logo"
                         fill
                         className={styles.heroLogo}
