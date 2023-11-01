@@ -1,0 +1,17 @@
+.imgWrapper {
+  display: flex;
+  width: 350px;
+  height: auto;
+  margin: auto;
+  position: relative;
+
+  @media (max-width: $responsive) {
+    width: 100%;
+  }
+
+  .openBtn {
+    @media (max-width: $responsive) {
+      display: none;
+    }
+  }
+}

@@ -3,6 +3,8 @@ $primary-hover: lighten($primary, 5%);
 
 $radius: 8px;
 
+$responsive: 750px;
+
 @function sized($size) {
-  @return $size * 4px;
+  @return $size * 0.25rem;
 }

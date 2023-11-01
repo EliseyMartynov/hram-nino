@@ -1,0 +1,20 @@
+.infoBox {
+  width: 65%;
+  margin: auto;
+
+  @media (max-width: $responsive) {
+    width: 100%;
+  }
+}
+
+.avatarBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: sized(4);
+
+  & .avatar {
+    margin-right: sized(5);
+  }
+
+}

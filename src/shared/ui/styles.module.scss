@@ -1,0 +1,22 @@
+.link {
+  background: $primary;
+  padding: sized(3);
+  color: white;
+  border-radius: $radius;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 1px #BBB;
+  text-align: center;
+
+  &:hover {
+    background: $primary-hover;
+  }
+}
+
+.avatar {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 999999px;
+  overflow: hidden;
+  border: 2px solid $primary;
+}

@@ -5,19 +5,43 @@
 
   &:not(:last-child) {
     margin-bottom: sized(10);
-  }
 
-  & > span {
-    font-size: sized(15);
-    margin: 0 auto;
+    @media (max-width: $responsive) {
+      margin-bottom: sized(6);
+    }
   }
 
   & :global(.textContainer) {
     width: 50%;
+
+    @media (max-width: $responsive) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    font-size: sized(15);
+    margin: 0 auto;
+
+    @media (max-width: $responsive) {
+      font-size: sized(7);
+      margin-bottom: sized(6);
+    }
   }
 
   .emoji {
     font-size: sized(25);
     line-height: 1.1;
+  }
+
+}
+
+.block2 {
+  flex-direction: row-reverse;
+}
+
+.block, .block2 {
+  @media (max-width: $responsive) {
+    flex-direction: column;
   }
 }

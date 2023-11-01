@@ -12,6 +12,10 @@ const links = [
         link: '#schedule',
     },
     {
+        name: 'Духовенство',
+        link: '#ministry',
+    },
+    {
         name: 'Контакты',
         link: '#contacts',
     },
@@ -21,7 +25,7 @@ export const MainSection = () => {
     return (
         <>
             <video autoPlay className={styles.video} loop muted>
-                <source src="/assets/georgia_video.mp4" type="video/mp4" />
+                <source src="/assets/cloud.mp4" type="video/mp4" />
             </video>
             <div className={styles.gradient} />
             <section className={styles.mainSection}>

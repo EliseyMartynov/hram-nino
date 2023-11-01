@@ -1,12 +1,13 @@
 import styles from './about.module.scss';
 import { sized } from '@shared/ui/lib/sized';
+import cx from 'classnames';
 
 export const About = () => {
     return (
         <section className="section" id="about">
             <h2 className="subtitle">О приходе</h2>
             <div className={styles.block}>
-                <span className={styles.emoji}>🙌</span>
+                <span className={cx(styles.emoji, styles.text)}>🙌</span>
                 <div className="textContainer" style={{ textAlign: 'center' }}>
                     Молодой приход взял на себя большое {'\n'}
                     <strong>социальное служение</strong> {'\n'}
@@ -15,8 +16,8 @@ export const About = () => {
                 </div>
             </div>
 
-            <div className={styles.block} style={{ flexDirection: 'row-reverse' }}>
-                <span>
+            <div className={cx(styles.block, styles.block2)}>
+                <span className={styles.text}>
                     11 ноября {'\n'}
                     2022 года
                 </span>
